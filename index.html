@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Free Fire Generator</title>
+    <link rel="icon" type="image/png" href="/Assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('/Assets/bg/outer.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            background-image: url(/Assets/bg/inner.jpeg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 20px;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            border-radius: 20px;
+        }
+        .container > * {
+            position: relative;
+            z-index: 1;
+        }
+        .play-button {
+            background: linear-gradient(to bottom, #ffb84d, #ff7300);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px #b35900;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .play-button:hover {
+            background: linear-gradient(to bottom, #ffc266, #ff8533);
+        }
+        .play-button:active {
+            box-shadow: 0 2px #b35900;
+            transform: translateY(2px);
+        }
+        .play-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="container bg-gray-900 text-yellow-400 rounded-lg p-6 w-full max-w-md shadow-lg">
+        <h1 class="text-center text-2xl font-bold mb-4">NARUTO FREE FIRE GENERATOR</h1>
+        <div class="mb-4">
+            <label class="block text-center mb-2" for="player-id">ENTER YOUR PLAYER ID:</label>
+            <input class="w-full p-2 rounded bg-gray-800 text-white" id="player-id" placeholder="Type your ID here" type="text">
+        </div>
+        <h2 class="text-center text-lg font-bold mb-4">SELECT YOUR REWARD (ONLY 1):</h2>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3489_imresizer.jpg" alt="Reward 1" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3491_imresizer.jpg" alt="Reward 2" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3492_imresizer.jpg" alt="Reward 3" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3493_imresizer.jpg" alt="Reward 4" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3494_imresizer.jpg" alt="Reward 5" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3495_imresizer.jpg" alt="Reward 6" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3496_imresizer.jpg" alt="Reward 7" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3497_imresizer.jpg" alt="Reward 8" class="w-full h-auto">
+            </div>
+            <div class="bg-gray-800 p-2 rounded hover:scale-105 hover:border-yellow-400 transition-all border-2 border-transparent">
+                <img src="/Assets/IMG_3498_imresizer.jpg" alt="Reward 9" class="w-full h-auto">
+            </div>
+        </div>
+        <div class="play-button-container">
+            <button class="play-button">
+                Play
+            </button>
+        </div>
+    </div>
+</body>
+</html>
